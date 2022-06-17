@@ -77,6 +77,10 @@ header {
 }
 
 .logo {
+  margin-right: 93px;
+  display: block;
+  padding-bottom: 24px;
+  padding-top: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -118,6 +122,15 @@ header {
   fill: #2196f3;
 }
 
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__list .link {
   padding-bottom: 32px;
   padding-top: 32px;
@@ -148,6 +161,15 @@ header {
   color: #2196f3;
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contacts .link {
   padding-bottom: 32px;
   padding-top: 32px;
@@ -170,6 +192,22 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header__link {
@@ -253,6 +291,40 @@ header {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
   }
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header__wrap {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 796px;
+  background-color: red;
+}
+
+.header__wrap.is-open {
+  display: block;
 }
 
 /* --------------------Hero------------------------------- */
@@ -1483,6 +1555,12 @@ footer {
 @media screen and (max-width: 768px) {
   .buttons__item {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons__item:nth-child(n + 2) {
+    margin-bottom: 0;
   }
 }
 
