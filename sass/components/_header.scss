@@ -15,6 +15,7 @@ header {
   text-decoration: none;
   letter-spacing: 0.03em;
   color: $accent-text;
+
   @media screen and(max-width:1200px) {
     margin-right: 88px;
   }
@@ -26,7 +27,7 @@ header {
   color: $headers-text;
 }
 .contacts__svg {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     display: none;
   }
 }
@@ -63,7 +64,7 @@ header {
   @media screen and(min-width:768px) {
     display: flex;
     align-items: center;
-    margin-right: 84px;
+    margin-right: 65px;
   }
   @media screen and(min-width:1200px) {
     margin-right: 280px;
@@ -94,6 +95,7 @@ header {
   & > li:not(:last-child) {
     margin-right: 50px;
   }
+
   @media screen and(min-width:768px) {
     margin-top: 21px;
     margin-bottom: 21px;
@@ -107,14 +109,14 @@ header {
   }
 }
 .contacts__link--tel {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     font-size: 34px;
     margin-bottom: 64px;
   }
 }
 .contacts__link--mail {
   align-items: center;
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     font-size: 24px;
     margin-bottom: 32px;
   }
@@ -134,9 +136,7 @@ header {
   position: relative;
 }
 .header__nav {
-  // display: flex;
-  @media screen and(max-width:768px) {
-    // flex-grow: 1;
+  @media screen and(max-width:767px) {
     margin-bottom: 302px;
   }
 }
@@ -178,19 +178,19 @@ header {
     padding-bottom: 32px;
     padding-top: 32px;
   }
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;
   }
   & {
-    @media screen and(max-width:768px) {
+    @media screen and(max-width:767px) {
       margin-bottom: 32px;
     }
   }
   & :last-child {
-    @media screen and(max-width:768px) {
+    @media screen and(max-width:767px) {
       margin-bottom: 0px;
     }
   }
@@ -299,7 +299,6 @@ header {
   }
   @media screen and(min-width:768px) {
     display: flex;
-
     text-align: center;
     // justify-content: space-between;
   }
