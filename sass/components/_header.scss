@@ -92,10 +92,8 @@ header {
 }
 
 .contacts {
-  & > li:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (max-width: 767px) {
   }
-
   @media screen and(min-width:768px) {
     margin-top: 21px;
     margin-bottom: 21px;
@@ -113,6 +111,9 @@ header {
     font-size: 34px;
     margin-bottom: 64px;
   }
+  @media screen and(max-width:480px) {
+    font-size: 8vw;
+  }
 }
 .contacts__link--mail {
   align-items: center;
@@ -122,6 +123,9 @@ header {
   }
   @media screen and(max-width:1200px) {
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
   }
 }
 .contacts__item {
@@ -137,7 +141,7 @@ header {
 }
 .header__nav {
   @media screen and(max-width:767px) {
-    margin-bottom: 302px;
+    // margin-bottom: 302px;
   }
 }
 .header__link {
@@ -254,24 +258,33 @@ header {
     display: none;
   }
 }
-
-.soc-item:not(:last-child)::after {
-  content: "";
-  display: inline-block;
-
-  width: 1px;
-  height: 22px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
-  margin-left: 10px;
+.soc-item {
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
 }
-.soc-item::after {
-  content: "";
-  width: 1px;
-  height: 22px;
-  background-color: transparent;
-  display: inline-block;
-}
+
+// .soc-item:not(:last-child)::after {
+//   content: "";
+//   display: inline-block;
+
+//   width: 1px;
+//   height: 22px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   margin-right: 10px;
+//   margin-left: 10px;
+// }
+// .soc-item::after {
+//   content: "";
+//   width: 1px;
+//   height: 22px;
+//   background-color: transparent;
+//   display: inline-block;
+// }
 
 .soc-link {
   text-decoration: none;
@@ -283,9 +296,16 @@ header {
   padding: 0;
   margin: 0;
 }
+.header__wrap:not(.is-open) {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+}
 .header__wrap {
   @media screen and(max-width:767px) {
     display: none;
+    display: flex;
+
     background-color: white;
     position: absolute;
     top: 0;
@@ -300,11 +320,21 @@ header {
   @media screen and(min-width:768px) {
     display: flex;
     text-align: center;
-    // justify-content: space-between;
+    justify-content: space-between;
   }
   @media screen and(min-width:1200px) {
     align-items: baseline;
   }
+}
+
+.header__wrap.is-open,
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list__wrap {
 }
 
 // /*------------------------ Header------------------ */
