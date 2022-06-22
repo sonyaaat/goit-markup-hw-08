@@ -496,7 +496,7 @@ header {
   left: 0;
   background-color: white;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   z-index: 99;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -507,6 +507,7 @@ header {
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 15px;
+  padding-bottom: 48px;
 }
 
 .menu-container.is-open {
@@ -1787,13 +1788,6 @@ footer {
 
 .footer__button {
   margin: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: baseline;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -1807,6 +1801,20 @@ footer {
   line-height: 1.8;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
