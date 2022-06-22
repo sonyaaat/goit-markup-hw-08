@@ -16,7 +16,7 @@ footer {
 .address-tag {
   font-family: inherit;
 
-  @media screen and(max-width:1200px) {
+  @media screen and(max-width:768px) {
     margin-bottom: 60px;
   }
 }
@@ -102,15 +102,19 @@ footer {
     display: flex;
     align-items: baseline;
   }
+  @media screen and(max-width:768px) {
+    margin-bottom: 60px;
+  }
   @media screen and(min-width:768px) and(max-width:1200px) {
     text-align: center;
-    margin-left: 76px;
+    padding-left: 76px;
+    padding-right: 76px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and(max-width:1200px) {
+    margin-bottom: 60px;
   }
 }
 .left-part {
-  // margin-right: 70px;
 }
 .center-part {
   align-items: center;
@@ -120,10 +124,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
   }
   @media screen and(min-width:768px) and(max-width:1200px) {
-    margin-left: 165px;
+    margin-left: auto;
   }
   @media screen and(min-width:1200px) {
     margin-left: 70px;
@@ -165,7 +168,8 @@ footer {
 
 .right-part {
   @media screen and(min-width:768px) and(max-width:1200px) {
-    display: flex;
+    // display: flex;
+    // flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -227,6 +231,12 @@ footer {
   &:focus::placeholder {
     color: $accent-text;
   }
+  @media screen and(min-width:768px) and(max-width:1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
   @media screen and(max-width:1200px) {
     width: 450px;
     margin-bottom: 20px;
@@ -239,16 +249,17 @@ footer {
 .footer__form {
   @media screen and(max-width:768px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  // @media screen and(min-width:1200px) {
-  //   margin-left: auto;
-  // }
 }
 .footer__button {
-  text-align: center;
+  margin: 0;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: baseline;
 
   width: 200px;
   height: 50px;

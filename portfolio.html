@@ -19,13 +19,13 @@
     />
   </head>
   <body>
-        <!-- Header -->
+    <!-- Header -->
     <header class="header">
       <div class="container header__container">
         <a href="" lang="en" class="logo"
           >Web<span class="studio">Studio</span></a
         >
-        <div class="header__wrap" id="header__wrap" >
+        <div class="header__wrap" id="header__wrap">
           <nav class="header__nav">
             <ul class="list header__list">
               <li class="list header__item">
@@ -34,7 +34,7 @@
                 >
               </li>
               <li class="list header__item">
-                <a href="" class=" header__link header__link--active link"
+                <a href="" class="header__link header__link--active link"
                   >Портфолио</a
                 >
               </li>
@@ -45,7 +45,7 @@
           </nav>
           <div class="list__wrap">
             <ul class="list contacts">
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--mail">
                 <a
                   href="mailto:info@devstudio.com"
                   lang="en"
@@ -72,7 +72,6 @@
                 </a>
               </li>
             </ul>
-            
           </div>
         </div>
 
@@ -82,7 +81,6 @@
           aria-label="Переключатель мобильного меню"
           aria-expanded="false"
           aria-controls="mobile-menu"
-          
         >
           <svg width="25px" height="16px">
             <!-- <use class="icon-cross" href="./images/sprite.svg#cross"></use> -->
@@ -91,91 +89,84 @@
         </button>
       </div>
     </header>
-   <header class="header">
 
-<!-- MENU -->
-      <div class="menu-container js-menu-container" id="mobile-menu" js-menu-container>
-           <button
-          type="button"
-          class="menu-button menu-button--close js-close-menu"
-          aria-label="Переключатель мобильного меню"
-          aria-expanded="false"
-         
-          
-        >
-          <svg width="40px" height="40px">
-            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
-            <!-- <use class="icon-menu" href="./images/sprite.svg#menu"></use> -->
-          </svg>
-        </button>
-        
-        <div class="mobile-menu"  >
-          <nav class="header__nav">
-            <ul class="list header__list">
-              <li class="list header__item">
-                <a href="" class="header__link header__link--active link"
-                  >Студия</a
-                >
-              </li>
-              <li class="list header__item">
-                <a href="./portfolio.html" class="header__link link"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="list header__item">
-                <a href="" class="header__link link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="list__wrap">
-            <ul class="list contacts-menu">
-              <li class="contacts__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  lang="en"
-                  class="contacts__link link contacts__link--mail"
-                >
-                  <svg class="contacts__svg contacts__svg--mail">
-                    <use href="./images/sprite.svg#mail"></use>
-                  </svg>
+    <!-- MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu-button menu-button--close js-close-menu"
+        aria-label="Переключатель мобильного меню"
+        aria-expanded="false"
+      >
+        <svg width="40px" height="40px">
+          <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+          <!-- <use class="icon-menu" href="./images/sprite.svg#menu"></use> -->
+        </svg>
+      </button>
 
-                  <span> info@devstudio.com </span>
-                </a>
-              </li>
-              <li class="contacts-menu__item">
-                <a
-                  href="tel:+380961111111"
-                  lang="en"
-                  class="contacts__link link contacts__link--tel"
-                >
-                  <svg class="contacts__svg contacts__svg--tel">
-                    <use href="./images/sprite.svg#tel"></use>
-                  </svg>
+      <div class="mobile-menu">
+        <nav class="header__nav">
+          <ul class="list header__list">
+            <li class="list header__item">
+              <a href="./index.html" class="header__link link">Студия</a>
+            </li>
+            <li class="list header__item">
+              <a href="" class="header__link header__link--active link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="list header__item">
+              <a href="" class="header__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="list__wrap">
+          <ul class="list contacts-menu">
+            <li class="contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                lang="en"
+                class="contacts__link link contacts__link--mail"
+              >
+                <svg class="contacts__svg contacts__svg--mail">
+                  <use href="./images/sprite.svg#mail"></use>
+                </svg>
 
-                  <span>+38 096 111 11 11</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="soc list">
-              <li class="soc-item link">
-                <a href="" class="soc-link">Instagram</a>
-              </li>
-              <li class="soc-item link">
-                <a href="" class="soc-link">Twitter</a>
-              </li>
-              <li class="soc-item link">
-                <a href="" class="soc-link">Facebook</a>
-              </li>
-              <li class="soc-item link">
-                <a href="" class="soc-link">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
+                <span> info@devstudio.com </span>
+              </a>
+            </li>
+            <li class="contacts-menu__item">
+              <a
+                href="tel:+380961111111"
+                lang="en"
+                class="contacts__link link contacts__link--tel"
+              >
+                <svg class="contacts__svg contacts__svg--tel">
+                  <use href="./images/sprite.svg#tel"></use>
+                </svg>
+
+                <span>+38 096 111 11 11</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="soc list">
+            <li class="soc-item link">
+              <a href="" class="soc-link">Instagram</a>
+            </li>
+            <li class="soc-item link">
+              <a href="" class="soc-link">Twitter</a>
+            </li>
+            <li class="soc-item link">
+              <a href="" class="soc-link">Facebook</a>
+            </li>
+            <li class="soc-item link">
+              <a href="" class="soc-link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
-
-     
       </div>
-    <main>
+    </div>
+
     <!-- MAIN -->
     <main>
       <!-- PORTFOLIO -->
@@ -183,7 +174,11 @@
         <div class="container">
           <h1 hidden>Portfolio</h1>
           <ul class="list buttons">
-            <li><button type="button" class="buttons__item">Все</button></li>
+            <li>
+              <button type="button" class="buttons__item buttons__item--accent">
+                Все
+              </button>
+            </li>
             <li>
               <button type="button" class="buttons__item">Веб-сайты</button>
             </li>
@@ -199,16 +194,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio1.jpg    1x,
-                      ./images/portfolio1@2x.jpg 2x
-                    "
-                    src="./images/portfolio1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio1-small.jpg    1x,
+                        ./images/portfolio1-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio1-medium.jpg    1x,
+                        ./images/portfolio1-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio1.jpg    1x,
+                        ./images/portfolio1@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio1.jpg    1x,
+                        ./images/portfolio1@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -225,16 +240,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio2.jpg    1x,
-                      ./images/portfolio2@2x.jpg 2x
-                    "
-                    src="./images/portfolio2.jpg"
-                    alt="New Orlean vs Golden Star"
-                    width="370"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio2-small.jpg    1x,
+                        ./images/portfolio2-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio2-medium.jpg    1x,
+                        ./images/portfolio2-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio2.jpg    1x,
+                        ./images/portfolio2@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio2.jpg    1x,
+                        ./images/portfolio2@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -253,15 +288,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio3.jpg    1x,
-                      ./images/portfolio3@2x.jpg 2x
-                    "
-                    src="./images/portfolio3.jpg"
-                    alt="Seafood"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio3-small.jpg    1x,
+                        ./images/portfolio3-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio3-medium.jpg    1x,
+                        ./images/portfolio3-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio3.jpg    1x,
+                        ./images/portfolio3@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio3.jpg    1x,
+                        ./images/portfolio3@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -280,15 +336,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio4.jpg    1x,
-                      ./images/portfolio4@2x.jpg 2x
-                    "
-                    src="./images/portfolio4.jpg"
-                    alt="Prime"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio4-small.jpg    1x,
+                        ./images/portfolio4-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio4-medium.jpg    1x,
+                        ./images/portfolio4-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio4.jpg    1x,
+                        ./images/portfolio4@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio4.jpg    1x,
+                        ./images/portfolio4@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -307,15 +384,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio5.jpg    1x,
-                      ./images/portfolio5@2x.jpg 2x
-                    "
-                    src="./images/portfolio5.jpg"
-                    alt="Boxes"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio5-small.jpg    1x,
+                        ./images/portfolio5-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio5-medium.jpg    1x,
+                        ./images/portfolio5-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio5.jpg    1x,
+                        ./images/portfolio5@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio5.jpg    1x,
+                        ./images/portfolio5@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -333,15 +431,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio6.jpg    1x,
-                      ./images/portfolio6@2x.jpg 2x
-                    "
-                    src="./images/portfolio6.jpg"
-                    alt="Inspiration has no Borders"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio6-small.jpg    1x,
+                        ./images/portfolio6-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio6-medium.jpg    1x,
+                        ./images/portfolio6-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio6.jpg    1x,
+                        ./images/portfolio6@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio6.jpg    1x,
+                        ./images/portfolio6@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -357,15 +476,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio7.jpg    1x,
-                      ./images/portfolio7@2x.jpg 2x
-                    "
-                    src="./images/portfolio7.jpg"
-                    alt="Limited Edition"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio7-small.jpg    1x,
+                        ./images/portfolio7-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio7-medium.jpg    1x,
+                        ./images/portfolio7-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio7.jpg    1x,
+                        ./images/portfolio7@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio7.jpg    1x,
+                        ./images/portfolio7@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -383,15 +523,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio8.jpg    1x,
-                      ./images/portfolio8@2x.jpg 2x
-                    "
-                    src="./images/portfolio8.jpg"
-                    alt="Проект"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio8-small.jpg    1x,
+                        ./images/portfolio8-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio8-medium.jpg    1x,
+                        ./images/portfolio8-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio8.jpg    1x,
+                        ./images/portfolio8@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio8.jpg    1x,
+                        ./images/portfolio2@8x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -407,16 +568,36 @@
             <li class="portfolio__item">
               <a href="" class="link portfolio__link">
                 <div class="portfolio__thumb">
-                  <img
-                    srcset="
-                      ./images/portfolio9.jpg    1x,
-                      ./images/portfolio9@2x.jpg 2x
-                    "
-                    src="./images/portfolio9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    class="portfolio__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio9-small.jpg    1x,
+                        ./images/portfolio9-small@2x.jpg 2x
+                      "
+                      media="(max-width:767.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio9-medium.jpg    1x,
+                        ./images/portfolio9-medium@2x.jpg 2x
+                      "
+                      media="(max-width:1199.9px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio9.jpg    1x,
+                        ./images/portfolio9@2x.jpg 2x
+                      "
+                      media="(minx-width:1200px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio9.jpg    1x,
+                        ./images/portfolio9@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <p class="portfolio__animation-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -439,7 +620,7 @@
       <div class="container footer__container">
         <div class="top-part">
           <div class="left-part">
-            <a href="" lang="en" class="logo logo-bottom"
+            <a href="" lang="en" class="logo-bottom"
               >Web<span class="studio-bottom">Studio</span></a
             >
             <address class="address-tag">
@@ -498,30 +679,27 @@
           </div>
         </div>
         <div class="right-part">
-          <form class="">
-            <label for="email" class="footer__subscribe">
-              Подпишитесь на рассылку
-            </label>
-            <div class="footer__form">
-              <input
-                type="email"
-                id="footer-email"
-                class="footer__input"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="footer__button">
-                Подписаться
-                <svg class="footer__button--img">
-                  <use
-                    class="footer__button--img"
-                    href="./images/sprite.svg#send"
-                  ></use>
-                </svg>
-              </button>
-            </div>
+          <p for="email" class="footer__subscribe">Подпишитесь на рассылку</p>
+          <form class="footer__form">
+            <input
+              type="email"
+              id="footer-email"
+              class="footer__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer__button">
+              Подписаться
+              <svg class="footer__button--img">
+                <use
+                  class="footer__button--img"
+                  href="./images/sprite.svg#send"
+                ></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

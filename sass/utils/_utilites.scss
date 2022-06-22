@@ -41,16 +41,31 @@ img {
     width: 1200px;
   }
 }
+label {
+  display: block;
+}
 /* ---------------------Секції------------------ */
 .section-padding {
-  padding-bottom: 200px;
-  padding-top: 200px;
+  @media screen and(max-width:1199.9px) {
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 .section-bottom {
   padding-bottom: 94px;
 }
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @media screen and(max-width:1199.9px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

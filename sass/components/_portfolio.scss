@@ -50,6 +50,10 @@
     }
   }
 }
+.buttons__item--accent {
+  background-color: $accent-text;
+  color: white;
+}
 
 .portfolio__list {
   @media screen and(max-width:767px) {
@@ -64,11 +68,9 @@
   }
 }
 .portfolio__item {
-  width: 450px;
-
   @media screen and(max-width:768px) {
-    width: 450px;
-    margin: 0 auto;
+    min-width: 450px;
+
     margin-bottom: 30px;
   }
   @media screen and(max-width:1200px) {
@@ -79,7 +81,7 @@
     margin-bottom: 30px;
   }
   @media screen and(min-width:1200px) {
-    width: 370px;
+    min-width: 370px;
   }
 }
 
@@ -103,6 +105,7 @@
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .portfolio__animation-text {
   position: absolute;

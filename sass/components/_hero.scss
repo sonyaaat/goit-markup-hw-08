@@ -9,7 +9,7 @@
     url(../../images/hero-big.jpg);
 
   text-align: center;
-  height: 600px;
+
   max-width: 1600px;
   background-size: cover;
   margin: 0 auto;
@@ -33,6 +33,7 @@
     }
   }
   @media screen and(max-width:1199px) {
+    height: 400px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -51,6 +52,7 @@
     }
   }
   @media screen and(min-width:1200px) {
+    height: 600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -72,14 +74,22 @@
 .hero__title {
   margin-bottom: 30px;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   color: $white-header;
 
+  font-weight: 900;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and(max-width:1199.9px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 44px;
+
+    line-height: 1.36;
+  }
 }
 .hero__button {
   min-width: 200px;
