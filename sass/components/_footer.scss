@@ -247,6 +247,7 @@ footer {
 }
 
 .footer__form {
+  display: flex;
   @media screen and(max-width:768px) {
     display: flex;
     flex-direction: column;
@@ -256,6 +257,10 @@ footer {
 }
 .footer__button {
   margin: 0;
+  padding: 10px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 200px;
   height: 50px;
