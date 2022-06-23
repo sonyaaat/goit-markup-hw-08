@@ -68,14 +68,15 @@
   }
 }
 .portfolio__item {
-  @media screen and(max-width:768px) {
-    min-width: 450px;
-
-    margin-bottom: 30px;
-  }
   @media screen and(max-width:1200px) {
     width: 354px;
   }
+  @media screen and(max-width:768px) {
+    width: 450px;
+
+    margin-bottom: 30px;
+  }
+
   @media screen and(min-width:768px) {
     margin-right: 30px;
     margin-bottom: 30px;
@@ -83,8 +84,15 @@
   @media screen and(min-width:1200px) {
     min-width: 370px;
   }
+  @media screen and (max-width: 768px) {
+    width: 96%;
+  }
 }
-
+.portfolio__img {
+  @media screen and (max-width: 479.98px) {
+    width: 96%;
+  }
+}
 .portfolio__link {
   height: 100%;
   display: flex;
@@ -111,6 +119,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  overflow: scroll;
 
   height: 100%;
   width: 100%;

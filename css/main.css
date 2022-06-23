@@ -420,6 +420,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .soc-item:not(:last-child) {
@@ -698,6 +700,12 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 96%;
+  }
+}
+
 .backdrop__button {
   position: absolute;
   top: 8px;
@@ -790,6 +798,12 @@ header {
   .form__input {
     width: 448px;
     height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form__input {
+    width: 98%;
   }
 }
 
@@ -887,6 +901,12 @@ header {
   .comments__input {
     width: 448px;
     height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comments__input {
+    width: 98%;
   }
 }
 
@@ -1757,7 +1777,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .footer__input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1768,13 +1788,19 @@ footer {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer__input {
+    width: 75%;
+  }
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .footer__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1789,6 +1815,12 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer__form {
+    display: block;
   }
 }
 
@@ -1941,16 +1973,16 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .portfolio__item {
-    min-width: 450px;
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .portfolio__item {
     width: 354px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio__item {
+    width: 450px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1964,6 +1996,18 @@ footer {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     min-width: 370px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio__item {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .portfolio__img {
+    width: 96%;
   }
 }
 
@@ -2003,6 +2047,7 @@ footer {
   position: absolute;
   top: 0px;
   left: 0px;
+  overflow: scroll;
   height: 100%;
   width: 100%;
   padding: 63px 24px;

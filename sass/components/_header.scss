@@ -265,6 +265,7 @@ header {
 }
 .soc {
   display: flex;
+  flex-wrap: wrap;
 }
 .soc-item {
   &:not(:last-child) {
